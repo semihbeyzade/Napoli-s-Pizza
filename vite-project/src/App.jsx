@@ -8,19 +8,31 @@ import About from './components/About';
 import Contact from './components/Contact';
 import ErrorPage from './components/ErrorPage';
 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
     <Router>
-      <nav className='bg-dark text-white d-flex justify-content-end fs-3 p-3 fixed-top'>
-        <Link to="/" className='text-white text-decoration-none'>Home</Link>
-        <Link to="menu" className='text-white text-decoration-none'>Menu</Link>
-        <Link to="about" className='text-white text-decoration-none'>About</Link>
-        <Link to="contact" className='text-white text-decoration-none'>Contact</Link> 
+     <nav className='bg-dark text-white d-flex justify-content-end p-3 fixed-top'>
+     <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <Link to="/" class="nav-link active text-white" aria-current="page">Home</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="menu" class="nav-link text-white">Menu</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="about" class="nav-link text-white">About</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="contact" class="nav-link text-white" tabindex="-1" aria-disabled="true">Contact</Link>
+        </li>
+     </ul>
+     </nav>
 
-      </nav>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/menu' element={<Menu />} />
