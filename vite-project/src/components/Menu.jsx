@@ -1,12 +1,14 @@
 import React from 'react'
 
 function Menu() {
+  
+  
+
   return (
     <div>
         <div className='menu-top d-flex flex-column justify-content-center align-items-center'>
             <h2 className=''>Our Menu</h2>
-            
-            <div class="row row-cols-1 row-cols-md-3 g-4 w-75 mt-3 mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 w-75 mt-3 mb-5">
   <div class="col">
     <div class="card">
         

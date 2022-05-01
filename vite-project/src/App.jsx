@@ -10,13 +10,14 @@ import ErrorPage from './components/ErrorPage';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menu, setMenu] = useState("")
+
 
   return (
     <>
     <Router>
      <nav className='bg-danger text-white d-flex justify-content-between fixed-top'>
-       <img src="../img/logo2.png" className='logo ms-2' alt="" />
+       <img src="../img/logos.png" className='logo ms-5' alt="" />
      <ul class="nav d-flex justify-content-center align-items-center me-2">
         <li class="nav-item">
           <Link to="/" class="nav-link active text-white fs-3" aria-current="page">Home</Link>
@@ -36,7 +37,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/menu' element={<Menu />} />
+        <Route path='/menu'  element={<Menu />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<ErrorPage />} />
