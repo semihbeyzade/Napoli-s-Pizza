@@ -2,7 +2,7 @@ import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from './components/Home'
-import Menu from './components/Menu';
+import Menu from '../src/components/Menu';
 import About from './components/About';
 import Contact from './components/Contact';
 import ErrorPage from './components/ErrorPage';
@@ -14,7 +14,7 @@ import axios from 'axios';
 
 function App() {
 
-  const [data, setData] = useState({ menus: [] })
+  const [data, setData] = useState({ })
 
   useEffect( () => {
    const axiosMenus = async () => {
