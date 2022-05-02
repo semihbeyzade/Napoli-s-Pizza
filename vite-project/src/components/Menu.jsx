@@ -1,20 +1,23 @@
 import React from "react";
 
+
 function Menu(props) {
-    console.log(props.dataMenus);
+    console.log(props);
     
-    
+ 
     return (
         <div>
           <div className="menu-top d-flex flex-column justify-content-center align-items-center font-monospace">
             <h2 className="fw-bold">Our Menu</h2>
-            <input className="w-25" type="submit" value='Search your favorite pizza...' />
+                <div className="w-100 text-center">
+                <input  className="w-25" type="text" onChange={props.deneme} placeholder='Search your favorite pizza...' />
+                </div>
             <div className="row row-cols-1 row-cols-md-3 g-4 w-75 mt-3 mb-5">
     
               {
-                props.dataMenus.map(dataMenu => {
+                props.dataMenus.map((dataMenu, index) => {
                   return (
-                    <div className="col">
+                    <div className="col" key={index}>
                       <div className="card">
                         <img src={dataMenu.url} className="card-img-top" alt="..." />
                         <div className="card-body">

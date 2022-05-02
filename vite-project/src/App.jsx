@@ -14,7 +14,10 @@ import axios from 'axios';
 
 function App() {
 
-  const [data, setData] = useState({ })
+  const [data, setData] = useState([ ])
+  const [searchTerm, setSearchTerm] = useState("")
+  
+
 
   useEffect( () => {
    const axiosMenus = async () => {
@@ -27,8 +30,26 @@ function App() {
   }, [])
   
 // http://localhost:3002/menus
+const onInput = (event) =>{
+  setSearchTerm(event.target.value)
+}
+
+let filteredData = data.filter((val) => {
+  console.log(val.header);
+  if(searchTerm == "") {
+    return val
+  } else if(val.header.toLowerCase().includes(searchTerm.toLowerCase())){
+    return val
+  }
+})
+
+
+ console.log(data);
+
+
 
   return (
+  
     <>
     <Router>
      <nav className='bg-danger text-white d-flex justify-content-between fixed-top font-monospace text-decoration-underline fs-4 nav-item'>
@@ -52,7 +73,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/menu'  element={<Menu dataMenus={data} />} />
+        <Route path='/menu'  element={<Menu dataMenus={filteredData} deneme={onInput} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<ErrorPage />} />
