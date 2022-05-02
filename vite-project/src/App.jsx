@@ -18,20 +18,20 @@ function App() {
   return (
     <>
     <Router>
-     <nav className='bg-danger text-white d-flex justify-content-between fixed-top'>
+     <nav className='bg-danger text-white d-flex justify-content-between fixed-top font-monospace text-decoration-underline fs-4 nav-item'>
        <img src="../img/logos.png" className='logo ms-5' alt="" />
      <ul class="nav d-flex justify-content-center align-items-center me-2">
         <li className="nav-item">
-          <Link to="/" className="nav-link active text-white fs-3" aria-current="page">Home</Link>
+          <Link to="/" className="nav-link active text-white" aria-current="page">Home</Link>
         </li>
         <li className="nav-item">
-          <Link to="menu" className="nav-link text-white fs-3">Menu</Link>
+          <Link to="menu" className="nav-link text-white ">Menu</Link>
         </li>
         <li className="nav-item">
-          <Link to="about" className="nav-link text-white fs-3">About</Link>
+          <Link to="about" className="nav-link text-white">About</Link>
         </li>
         <li className="nav-item">
-          <Link to="contact" className="nav-link text-white fs-3">Contact</Link>
+          <Link to="contact" className="nav-link text-white">Contact</Link>
         </li>
      </ul>
      </nav>

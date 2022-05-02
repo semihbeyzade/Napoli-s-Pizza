@@ -6,9 +6,9 @@ function Contact() {
         <div className='contact-img w-50'>
        
         </div>
-        <div className='contact-page bg-dark text-white w-50'>
+        <div className='contact-page  w-50 font-monospace'>
         <div className='contact-form d-flex justify-content-center align-items-center flex-column h-100'>
-            <h2 className='mb-5'>Contact Us</h2>
+            <h2 className='mb-5 fw-bold'>Contact Us</h2>
             <form className=''>
             <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Full name</label>
@@ -22,7 +22,7 @@ function Contact() {
   <label for="exampleFormControlTextarea1" class="form-label">Message</label>
   <textarea class="form-control rounded bg-transparent text-dark border border-danger" placeholder='Enter message...' id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
-  <button type="submit" class="btn btn-dark rounded-pill">Submit</button>
+  <button type="submit" class="btn btn-danger rounded-pill">Submit</button>
 </form>
         </div>
         </div>
