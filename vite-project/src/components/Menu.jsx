@@ -1,12 +1,11 @@
 import React from "react";
 
-function Menu({dataMenus}) {
-
-
+function Menu(dataMenus) {
+  console.log(dataMenus);
+ 
   return (
      
     <div>
-         console.log(dataMenus)
       <div className="menu-top d-flex flex-column justify-content-center align-items-center font-monospace">
         <h2 className="fw-bold">Our Menu</h2>
         <div className="row row-cols-1 row-cols-md-3 g-4 w-75 mt-3 mb-5">
