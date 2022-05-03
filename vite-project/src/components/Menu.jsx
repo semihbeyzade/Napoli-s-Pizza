@@ -8,7 +8,7 @@ function Menu(props) {
     return (
         <div>
           <div className="menu-top d-flex flex-column justify-content-center align-items-center font-monospace">
-            <h2 className="fw-bold">Our Menu</h2>
+            <h2 className="fw-bold menu-header"><span>Our Menu</span></h2>
                 <div className="w-100 text-center">
                 <input  className="w-25" type="text" onChange={props.deneme} placeholder='Search your favorite pizza...' />
                 </div>
