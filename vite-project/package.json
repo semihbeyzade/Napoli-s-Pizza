@@ -8,7 +8,7 @@
     "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
     "axios": "^0.27.2",
