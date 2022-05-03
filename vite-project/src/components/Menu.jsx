@@ -10,7 +10,7 @@ function Menu(props) {
           <div className="menu-top d-flex flex-column justify-content-center align-items-center font-monospace">
             <h2 className="fw-bold menu-header"><span>Our Menu Hello</span></h2>
                 <div className="w-100 text-center">
-                <input  className="w-25" type="text" onChange={props.deneme} placeholder='Search your favorite pizza...' />
+                <input  className="w-25" type="text" onChange={props.getInput} placeholder='Search your favorite pizza...' />
                 </div>
             <div className="row row-cols-1 row-cols-md-3 g-4 w-75 mt-3 mb-5">
     

@@ -77,7 +77,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route
             path="/menu"
-            element={<Menu dataMenus={filteredData} deneme={onInput} />}
+            element={<Menu dataMenus={filteredData} getInput={onInput} />}
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
