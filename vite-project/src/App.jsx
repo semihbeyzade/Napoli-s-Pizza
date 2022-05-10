@@ -6,23 +6,14 @@ import Menu from "../src/components/Menu";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ErrorPage from "./components/ErrorPage";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+import data from './data/data_menus.json'
 
 function App() {
-  const [data, setData] = useState([]);
+
   const [searchTerm, setSearchTerm] = useState("");
 
-  useEffect(() => {
-    const axiosMenus = async () => {
-      const { data: response } = await axios.get(
-        " http://localhost:3002/menus"
-      );
-      setData(response);
-      console.log(response);
-    };
-    axiosMenus();
-  }, []);
+
 
   // http://localhost:3002/menus
   const onInput = (event) => {
@@ -43,8 +34,8 @@ function App() {
   return (
     <>
       <Router>
-        <nav className="bg-danger text-white d-flex  fixed-top font-monospace text-decoration-underline nav-item">
-          <img src="../img/logos.png" className="logo" alt="" />
+        <nav className="bg-danger text-white d-flex justify-content-between fixed-top font-monospace text-decoration-underline nav-item">
+          <img src="../img/logos.png" className="logo m-2" alt="" />
           <ul class="nav d-flex justify-content-center align-items-center me-2">
             <li className="nav-item">
               <Link
