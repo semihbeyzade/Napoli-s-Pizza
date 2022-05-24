@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 
 
 function Menu(props) {
@@ -8,7 +9,7 @@ function Menu(props) {
     return (
         <div>
           <div className="menu-top d-flex flex-column justify-content-center align-items-center font-monospace">
-            <h2 className="fw-bold menu-header"><span>Ourr Menu</span></h2>
+            <h2 className="fw-bold menu-header"><span>Our Menu</span></h2>
                 <div className="w-100 text-center">
                 <input  className="w-25" type="text" onChange={props.getInput} placeholder='Search your favorite pizza...' />
                 </div>
@@ -19,9 +20,9 @@ function Menu(props) {
                   return (
                     <div className="col" key={index}>
                       <div className="card">
-                        <img src={dataMenu.url} className="card-img-top" alt="..." />
+                        <motion.img animate={{scale:[2,1]}} initial={{scale:2}} transition={{duration:1.5}}  src={dataMenu.url} className="card-img-top" alt="..." />
                         <div className="card-body">
-                          <h5 className="card-title fw-bold">{dataMenu.header}</h5>
+                          <h5  className="card-title fw-bold">{dataMenu.header}</h5>
                           <p className="card-text">{dataMenu.preis}</p>
                         </div>
                       </div>
