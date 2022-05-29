@@ -6,7 +6,7 @@ import Menu from "./components/Menu";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ErrorPage from "./components/ErrorPage";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import data from './data/data_menus.json'
 
 function App() {
@@ -20,14 +20,18 @@ function App() {
     setSearchTerm(event.target.value);
   };
 
-  let filteredData = data.filter((val) => {
+  let filteredData = useMemo( 
+    () =>
+    data.filter((val) => {
     console.log(val.header);
     if (searchTerm == "") {
       return val;
     } else if (val.header.toLowerCase().includes(searchTerm.toLowerCase())) {
       return val;
     }
-  });
+  }),
+  [searchTerm]
+  );
 
   console.log(data);
 

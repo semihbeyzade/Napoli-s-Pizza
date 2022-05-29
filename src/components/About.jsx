@@ -1,11 +1,18 @@
 import React from 'react'
 
+
 function About() {
+
+
+
+
+
   return (
     <>
-     <div>
-         <div>
-         <img src="../img/pizza1.jpg" className='about-img' alt="" />
+     <div className=''>
+         <div className='' >
+         <img src="../img/pizza1.jpg" className='about-img' alt="" /> 
+     
          </div>
          <div className='d-flex justify-content-center align-items-center flex-column font-monospace'>
              <h2 className='mt-3 fw-bold'>ABOUT US</h2>
