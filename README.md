@@ -9,6 +9,4 @@
 
 - Tools : Github, VSCode, Github, Netlify 
 
-## Bildschirmfoto
 
-<img src="ss-login.png" height="400" /> <img src="images/ss.png" height="400"/>
