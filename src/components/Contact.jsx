@@ -6,7 +6,7 @@ function Contact() {
         <div className='contact-img w-50'>
        
         </div>
-        <div className='contact-page  w-50 font-monospace'>
+        <div className='contact-page  w-50 font-monospace bg-light'>
         <div className='contact-form d-flex justify-content-center align-items-center flex-column h-100'>
             <h2 className='mb-5 fw-bold'>Contact Us</h2>
             <form className=''>
