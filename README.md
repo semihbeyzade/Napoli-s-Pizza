@@ -7,7 +7,7 @@
 
 - Frontend : React, React-Router (v6), Framer-Motion, Bootstrap
 
-- Tools : Github, VSCode, Github, Netlify, Canva 
+- Tools : Github, VSCode, Netlify, Canva 
 
 
 ## Reference Images :
